@@ -1,15 +1,30 @@
-import { FlatList } from 'react-native'
+import { FlatList, ScrollView } from 'react-native'
 import React from 'react'
-import { RestaurantItems } from '../../components'
+import { RestaurantItems, Text } from '../../components'
 import { RESTAURANT_DUM_DATA } from '../../utils/data'
+import { HomeProps } from '../../navigation/types'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import styles from './styles'
 
-const HomeScreen = () => {
+const HomeScreen = (props: HomeProps) => {
+  const { navigation } = props
+
+  const navHandle = (id: string) => {
+    navigation.navigate("restaurantDetails", {
+      id
+    })
+  }
+
   return (
-    <FlatList
-      data={RESTAURANT_DUM_DATA}
-      renderItem={({ item }) => <RestaurantItems restaurant={item} />}
-      showsVerticalScrollIndicator={false}
-    />
+    <SafeAreaView style={styles.page} >
+      <Text style={styles.headerTitle} text='Restaurants' />
+      <ScrollView >
+        {
+          RESTAURANT_DUM_DATA.map((e, i) => <RestaurantItems callBackHandle={navHandle} restaurant={e} key={i} />)
+        }
+      </ScrollView>
+    </SafeAreaView>
+
   )
 }
 

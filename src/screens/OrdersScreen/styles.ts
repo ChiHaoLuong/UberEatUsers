@@ -1,15 +1,15 @@
 import { StyleSheet } from 'react-native'
+
 export default StyleSheet.create({
-	page: {
+	root: {
 		flex: 1,
 		backgroundColor: 'white',
+		marginHorizontal: 12,
 	},
 	headerTitle: {
-		fontSize: 18,
 		fontWeight: 'bold',
+		marginVertical: 12,
 		textAlign: 'center',
-		paddingVertical: 12,
-		borderBottomWidth: 0.5,
-		borderBottomColor: 'grey',
+		fontSize: 18,
 	},
 })

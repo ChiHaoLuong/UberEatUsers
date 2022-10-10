@@ -4,7 +4,7 @@ export default StyleSheet.create({
 	root: {
 		flex: 1,
 		backgroundColor: 'white',
-		paddingHorizontal: 12,
+		marginHorizontal: 12,
 	},
 	iconBack: {
 		paddingVertical: 24,
@@ -22,16 +22,6 @@ export default StyleSheet.create({
 		backgroundColor: 'lightgrey',
 		marginVertical: 12,
 	},
-	quantityContainer: {
-		flexDirection: 'row',
-		justifyContent: 'center',
-		alignItems: 'center',
-		marginTop: 52,
-	},
-	quantityText: {
-		fontSize: 25,
-		marginHorizontal: 20,
-	},
 	button: {
 		backgroundColor: 'black',
 		marginTop: 'auto',
@@ -43,5 +33,9 @@ export default StyleSheet.create({
 		color: 'white',
 		fontWeight: '600',
 		fontSize: 18,
+	},
+	yourItem: {
+		fontWeight: 'bold',
+		fontSize: 19,
 	},
 })

@@ -1,4 +1,4 @@
-import { View, Image } from 'react-native'
+import { View, Image, Pressable } from 'react-native'
 import React from 'react'
 import styles from './styles'
 import { Text } from '../'
@@ -6,14 +6,19 @@ import { RestaurantItemsInterface } from '../../utils/interface'
 
 interface RestaurantItemsProps {
   restaurant: RestaurantItemsInterface
+  callBackHandle: (id: string) => void
 }
 
 export const RestaurantItems = (props: RestaurantItemsProps) => {
-  const { restaurant } = props
-  const delivery: string = `$${restaurant.deliveryFee}​ &#8226; ${restaurant.minDeliveryTime}-${restaurant.maxDeliveryTime} minutes`
+  const { restaurant, callBackHandle } = props
+  const delivery: string = `$${restaurant.deliveryFee}​ * ${restaurant.minDeliveryTime}-${restaurant.maxDeliveryTime} minutes`
+
+  const pressItemHandle = () => {
+    callBackHandle(restaurant.id)
+  }
 
   return (
-    <View style={styles.container} >
+    <Pressable onPress={pressItemHandle} style={styles.container} >
       <Image
         source={{ uri: restaurant.image }}
         style={styles.img}
@@ -28,6 +33,6 @@ export const RestaurantItems = (props: RestaurantItemsProps) => {
           <Text style={styles.rating} text={restaurant.rating + ""} />
         </View>
       </View>
-    </View>
+    </Pressable>
   )
 }

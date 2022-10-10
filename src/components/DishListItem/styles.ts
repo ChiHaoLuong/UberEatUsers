@@ -7,7 +7,7 @@ export default StyleSheet.create({
 		borderBottomColor: 'lightgrey',
 		marginVertical: 10,
 		flexDirection: 'row',
-		marginHorizontal: 24,
+		marginHorizontal: 12,
 	},
 	name: {
 		fontWeight: '600',
@@ -17,6 +17,7 @@ export default StyleSheet.create({
 	description: {
 		color: 'gray',
 		marginVertical: 4,
+		marginRight: 12,
 	},
 	price: {
 		fontSize: 15,

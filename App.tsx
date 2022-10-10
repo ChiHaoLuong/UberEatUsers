@@ -3,17 +3,23 @@ import {
   StatusBar,
 } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import DishDetailsScreen from './src/screens/DishDetailsScreen';
-import HomeScreen from './src/screens/HomeScreen';
-import RestaurantDetailsScreen from './src/screens/RestaurantDetailsScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './src/navigation';
+
 
 
 const App = () => {
-
   return (
     <SafeAreaProvider >
-      <StatusBar animated={true} />
-      <DishDetailsScreen />
+      <StatusBar
+        translucent
+        animated={true}
+        backgroundColor="rgba(0, 0, 0, 0)"
+        barStyle="dark-content"
+      />
+      <NavigationContainer >
+        <RootNavigator />
+      </NavigationContainer>
     </SafeAreaProvider >
   );
 };
