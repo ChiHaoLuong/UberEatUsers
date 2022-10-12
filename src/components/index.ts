@@ -1,6 +1,1 @@
-export * from './RestaurantItems'
-export * from './Text'
-export * from './DishListItem'
-export * from './OrderListItem'
-export * from './SafeAreaView'
-export * from './BasketDishItem'
+export * from './HeaderTabs'

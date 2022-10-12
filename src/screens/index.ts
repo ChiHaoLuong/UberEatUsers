@@ -1,15 +1,3 @@
-import DishDetailsScreen from './DishDetailsScreen'
-import HomeScreen from './HomeScreen'
-import RestaurantDetailsScreen from './RestaurantDetailsScreen'
-import BasketScreen from './BasketScreen'
-import OrdersScreen from './OrdersScreen'
-import OrderDetailsScreen from './OrdersDetailsScreen'
+import Home from './Home'
 
-export {
-	DishDetailsScreen,
-	HomeScreen,
-	RestaurantDetailsScreen,
-	BasketScreen,
-	OrdersScreen,
-	OrderDetailsScreen,
-}
+export { Home }

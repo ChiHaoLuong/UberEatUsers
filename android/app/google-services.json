@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "597626450895",
+    "project_id": "ubereatuser-47be0",
+    "storage_bucket": "ubereatuser-47be0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597626450895:android:1f234cda493771178218ba",
+        "android_client_info": {
+          "package_name": "com.ubereatusers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597626450895-2b5gq92k4knnlqhmbo7rujkkaupqjshn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1uClUbCG6KTU-NU8LlXF88LjJptT1XGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597626450895-2b5gq92k4knnlqhmbo7rujkkaupqjshn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

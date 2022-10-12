@@ -4,7 +4,8 @@ import {
 } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
-import RootNavigator from './src/navigation';
+import { Home } from './src/screens';
+// import RootNavigator from './src/navigation';
 
 
 
@@ -18,7 +19,7 @@ const App = () => {
         barStyle="dark-content"
       />
       <NavigationContainer >
-        <RootNavigator />
+        <Home />
       </NavigationContainer>
     </SafeAreaProvider >
   );
