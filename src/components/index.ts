@@ -1,1 +1,5 @@
 export * from './HeaderTabs'
+export * from './Categories'
+export * from './SearchBar'
+export * from './RestaurantItem'
+export * from './SubHeaderTabs'

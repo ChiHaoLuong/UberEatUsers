@@ -43,6 +43,11 @@ export const HeaderTabs = () => {
         setActiveTab={setActiveTab}
         text={ENUM_HEADER_TABS.PICKUP}
       />
+      <HeaderButton
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        text={ENUM_HEADER_TABS.DINE_IN}
+      />
     </View>
   )
 }
@@ -50,7 +55,9 @@ export const HeaderTabs = () => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    alignSelf: "center"
+    alignSelf: "center",
+    alignItems: "center",
+    justifyContent: "center"
   },
   tabContainer: {
     paddingVertical: 8,
