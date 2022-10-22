@@ -8,6 +8,8 @@ import { Home } from './src/screens';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
+import { RootStackScreen } from './src/navigators';
 // import RootNavigator from './src/navigation';
 
 Ionicons.loadFont()
@@ -24,7 +26,7 @@ const App = () => {
         barStyle="dark-content"
       />
       <NavigationContainer >
-        <Home />
+        <RootStackScreen />
       </NavigationContainer>
     </SafeAreaProvider >
   );
